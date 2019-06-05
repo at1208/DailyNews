@@ -12,14 +12,14 @@ const Header = (props) => {
 
 const style = {
   textStyle: {
-    fontSize:30
+    fontSize: 30,
+    fontWeight: '200',
   },
   viewStyle: {
   height: 150,
   width: 350,
   alignItems: 'center',
-  justifyContent: 'center'
-
+  justifyContent: 'center',
 
   }
 }

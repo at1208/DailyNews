@@ -8,6 +8,7 @@ const NewsDetail = (props) => {
        <Text style={style.textStyle} >{props.article.title}</Text>
        <Text>{props.article.author} <Text>{props.article.publishedAt}</Text></Text>
        <Image style={style.imageStyle} source={{ uri: props.article.urlToImage }} />
+       <Text style={{ fontStyle: 'italic' }}>{props.article.description}</Text>
       </View>
   )
 }
@@ -18,15 +19,19 @@ const style = {
     fontWeight: '600'
   },
   viewStyle:{
-    height: 250,
+    height: 350,
     width: 300,
     alignItems: 'center',
-    margin: 30
+    marginLeft: 40,
+    marginBottom: 30,
+    backgroundColor:'skyblue',
   },
   imageStyle: {
     height:200,
       flex:1,
-      width:300
+      width:300,
+      margin: 15
+
   }
 }
 

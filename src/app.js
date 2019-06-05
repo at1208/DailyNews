@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from './components/header';
-import { View } from 'react-native'
+import { View, ScrollView  } from 'react-native'
 import NewsList from './components/newslist'
 
 const App = () => {
   return (
-           <View>
+           <ScrollView>
           <Header heading='Daily News' />
           <NewsList />
-           </View>
+           </ScrollView>
   );
 };
 export default App;

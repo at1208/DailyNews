@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View,  ScrollView} from 'react-native';
 import axios from 'axios'
 import NewsDetail from './newsdetails'
 
@@ -18,12 +18,12 @@ class NewsList extends Component {
 
   render() {
 const Khabre =  this.state.articles.map((e) => {
-  return  <NewsDetail article={e} />
+  return  <NewsDetail article={e} key={e.description}/>
  });
     return (
-        <View>
+        <ScrollView>
         {Khabre}
-        </View>
+        </ScrollView>
     )
   }
 }
